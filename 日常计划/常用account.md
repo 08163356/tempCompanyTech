@@ -78,6 +78,30 @@ link:
 ```
 
 ```
+
+desc：辅导总结下载功能
+1.完成vr辅导总结弹框
+2.完成vr辅导总结下载
+committer： 陆兴
+taskID:
+todo:
+link: 
+```
+
+```
+desc：完成学生全部报告功能
+1.点击进入学生全部报告
+2.下载全部报告内容
+3.进入全部报告内容审核
+committer： 陆兴
+taskID: 7626
+todo:
+link: http://192.168.1.150/zentao/task-view-7626.html?tid=esb8fy92
+```
+
+
+
+```
 <template>
   <div>
     <el-row :gutter="15">
