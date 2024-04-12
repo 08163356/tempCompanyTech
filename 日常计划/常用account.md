@@ -99,67 +99,25 @@ todo:
 link: http://192.168.1.150/zentao/task-view-7626.html?tid=esb8fy92
 ```
 
-
-
 ```
-<template>
-  <div>
-    <el-row :gutter="15">
-      <el-form ref="elForm" :model="formData" :rules="rules" size="medium" label-width="100px">
-        <el-col :span="13">
-          <el-form-item label="" prop="evalCount">
-            <el-select v-model="formData.evalCount" placeholder="请选择" filterable clearable
-              :style="{width: '100%'}"></el-select>
-          </el-form-item>
-        </el-col>
-        <el-col :span="24">
-          <el-form-item size="large">
-            <el-button type="primary" @click="submitForm">提交</el-button>
-            <el-button @click="resetForm">重置</el-button>
-          </el-form-item>
-        </el-col>
-      </el-form>
-    </el-row>
-  </div>
-</template>
-<script>
-export default {
-  components: {},
-  props: [],
-  data() {
-    return {
-      formData: {
-        evalCount: '测评标题',
-      },
-      rules: {
-        evalCount: [{
-          required: true,
-          message: '请选择',
-          trigger: 'change'
-        }],
-      },
-    }
-  },
-  computed: {},
-  watch: {},
-  created() {},
-  mounted() {},
-  methods: {
-    submitForm() {
-      this.$refs['elForm'].validate(valid => {
-        if (!valid) return
-        // TODO 提交表单
-      })
-    },
-    resetForm() {
-      this.$refs['elForm'].resetFields()
-    },
-  }
-}
-
-</script>
-<style>
-</style>
-
+desc：完完善学生全部报告功能
+1.点击进入后显示正常
+2.能够全部下载
+3.修改父页面的辅导主题显示
+committer： 陆兴
+taskID: 7626
+todo:
+link: http://192.168.1.150/zentao/task-view-7626.html?tid=esb8fy92
 ```
 
+```
+desc：图表开发（三）
+1.完成图表1右侧图标按钮开发
+2.完成图表1数据模拟，点击响应
+3.完成图表2右侧按钮初步开发
+4.完成相应字段修改
+committer： 陆兴
+taskID: 7678
+todo:
+link: http://192.168.1.150/zentao/task-view-7678.html?tid=esb8fy92
+```
