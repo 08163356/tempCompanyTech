@@ -121,3 +121,15 @@ taskID: 7678
 todo:
 link: http://192.168.1.150/zentao/task-view-7678.html?tid=esb8fy92
 ```
+
+```
+desc：图表开发（四）
+1.完成图表2右侧图标按钮开发
+2.完成图表2部分数据模拟
+4.完成相应字段修改
+committer： 陆兴
+taskID: 7678
+todo:
+link: http://192.168.1.150/zentao/task-view-7678.html?tid=esb8fy92
+```
+
