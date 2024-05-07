@@ -20,4 +20,32 @@ import type { RawSymbol, Ref, UnwrapRefSimple } from './ref' 语句导入了模�
 
 是解脱嵌套的引用，nested在计算机中是嵌套的意思
 
-4.
+4.下面ts代码中的连续嵌套:Readonly<Ref<DeepReadonly<U>>>如何解释T extends Ref<infer U>
+                  ? Readonly<Ref<DeepReadonly<U>>>
+                  :  'todo'
+
+```
+给定的代码片段表示如果类型 T 是 Ref<infer U> 或其子类型，那么返回的类型是 Ref<DeepReadonly<U>> 的只读版本
+```
+
+5.isReactive((value as Target)[ReactiveFlags.RAW])中的value as Target是什么意思
+
+```
+表示将变量 value 强制类型转换为类型 Target
+
+类型转换使用 as 关键字，它告诉 TypeScript 将一个表达式的类型视为特定的类型。在这种情况下，(value as Target) 表示将 value 视为类型 Target，以便进行后续的操作和类型推断。
+
+类型转换通常用于以下情况：
+
+当我们知道变量的实际类型并且需要在类型系统中显式地将其更改为特定类型时。
+当我们与第三方库或旧代码集成，并且需要绕过类型检查错误或缺失时。
+当我们需要在特定的上下文中操作变量，并且类型系统无法自动推断出正确的类型时。
+需要注意的是，类型转换并不会在运行时改变变量的实际类型。它只是告诉 TypeScript 编译器在类型检查和类型推断过程中将变量视为特定类型。
+```
+
+6.请解释这行代码：export type Raw<T> = T & { [RawSymbol]?: true }
+
+```
+
+```
+
